@@ -74,7 +74,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           # Выполняет pull образа с DockerHub
-          sudo docker pull vinsteam/infra-action
+          sudo docker pull vinsteam/infra-action:v1.2
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 vinsteam/infra-action
