@@ -1,7 +1,8 @@
 from http import HTTPStatus
+
 from django.test import Client, TestCase
 
-# Test commit
+
 class StaticPagesURLTests(TestCase):
     def setUp(self):
         self.guest_client = Client()
